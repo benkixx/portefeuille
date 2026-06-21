@@ -82,6 +82,7 @@ for (let i = 0; i < filterBtn.length; i++) {
 const form = document.querySelector("[data-form]");
 const formInputs = document.querySelectorAll("[data-form-input]");
 const formBtn = document.querySelector("[data-form-btn]");
+const formStatus = document.querySelector("[data-form-status]");
 
 // add event to all form input field
 for (let i = 0; i < formInputs.length; i++) {
@@ -96,6 +97,39 @@ for (let i = 0; i < formInputs.length; i++) {
 
   });
 }
+
+// send form data to Web3Forms without leaving the page
+form.addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  formBtn.setAttribute("disabled", "");
+  formStatus.className = "form-status";
+  formStatus.textContent = "Sending...";
+  formStatus.classList.add("active");
+
+  fetch(form.action, {
+    method: "POST",
+    body: new FormData(form),
+    headers: { Accept: "application/json" }
+  })
+    .then((response) => response.json())
+    .then((result) => {
+      if (result.success) {
+        formStatus.textContent = "Message sent! I'll get back to you soon.";
+        formStatus.classList.add("success");
+        form.reset();
+      } else {
+        formStatus.textContent = "Something went wrong. Please try again.";
+        formStatus.classList.add("error");
+        formBtn.removeAttribute("disabled");
+      }
+    })
+    .catch(() => {
+      formStatus.textContent = "Something went wrong. Please try again.";
+      formStatus.classList.add("error");
+      formBtn.removeAttribute("disabled");
+    });
+});
 
 
 

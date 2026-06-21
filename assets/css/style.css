@@ -1221,6 +1221,19 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 .form-btn:disabled:hover::before { background: var(--bg-gradient-jet); }
 
+.form-status {
+  margin-top: 15px;
+  font-size: var(--fs-6);
+  text-align: center;
+  display: none;
+}
+
+.form-status.active { display: block; }
+
+.form-status.success { color: var(--orange-yellow-crayola); }
+
+.form-status.error { color: var(--bittersweet-shimmer); }
+
 
 
 
