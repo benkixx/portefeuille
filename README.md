@@ -1,27 +1,35 @@
-# Nabil Benkirane — Portfolio
+# Nabil Benkirane - Portfolio
 
-Personal portfolio website, built with HTML, CSS, and JavaScript.
+Personal portfolio website built with HTML, CSS, and JavaScript.
+
+## Live Links
+
+- Portfolio: [https://benkixx.github.io/portefeuille/](https://benkixx.github.io/portefeuille/)
+- SmartPlan AI: [https://smart-plannification.netlify.app/](https://smart-plannification.netlify.app/)
+- Calories Calculator: [https://benkixx.github.io/Calories-calculator/dist/](https://benkixx.github.io/Calories-calculator/dist/)
 
 ## About
 
-Industrial Engineering student (4th year, Cycle Ingénieur) at EMSI, with a background in DEUST GE & GM and a Licence in Génie Industriel, plus hands-on experience in quality inspection, methods/process, logistics, and continuous improvement. Currently looking for a final-year (PFA) internship in production, quality, logistics, or maintenance.
+Industrial Engineering student (4th year, Cycle Ingenieur) at EMSI, with an academic background spanning electrical engineering, mechanical engineering, and industrial engineering. My experience includes quality inspection, methods and process analysis, logistics, and continuous improvement.
+
+I am particularly interested in industrial system optimization, operational performance, and technical problem-solving related to production, quality, maintenance, and flow organization.
 
 ## Sections
 
-- **About** — profile summary and core skills (Qualité & Contrôle, Production & Méthodes, Lean Manufacturing, Informatique & Data)
-- **Resume** — education, professional experience, technical skills (CATIA, ERP/SAP, Lean Manufacturing 5S, web & data) and languages
-- **Portfolio** — [SmartPlan AI](https://smart-plannification.netlify.app/), a scheduling/planning web application
-- **Contact** — contact form and location
+- **About** - profile summary and core skills
+- **Resume** - education, experience, technical skills, and languages
+- **Portfolio** - featured projects including SmartPlan AI and Calories Calculator
+- **Contact** - direct contact form and location
 
 ## Contact
 
 - Email: [benkixnabil@gmail.com](mailto:benkixnabil@gmail.com)
 - Phone: +212 664-707278 / +212 691-046673
-- Location: Tanger / Nador, Maroc
+- Location: Tanger / Nador, Morocco
 
-## Running locally
+## Running Locally
 
-This is a static site with no build step. Just open `index.html` in a browser, or serve the folder with any static file server.
+This is a static site with no build step. Open `index.html` in a browser, or serve the folder with any static file server.
 
 ## Credits
 
